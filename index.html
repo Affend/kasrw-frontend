@@ -39,7 +39,7 @@
     <tbody id="tabel-transaksi"></tbody> 
   </table> 
   <script> 
-    const API = "http://50.17.78.208:8000"; 
+    const API = "http://172.31.24.86:8000"; 
     function formatRupiah(n){ return "Rp " + Number(n).toLocaleString("id-ID"); } 
     async function loadTransaksi() { 
       const res = await fetch(API + "/transaksi"); 
