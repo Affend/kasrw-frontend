@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f4f6f9;
+    padding: 30px;
+    color: #333;
+}
+
+/* Container Utama */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+h1 {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    font-size: 32px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+h2 {
+    margin: 25px 0 15px;
+    color: #2a5298;
+    font-size: 22px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+/* Form */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6dbe1;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #2a5298;
+    box-shadow: 0 0 0 3px rgba(42,82,152,.15);
+}
+
+#keterangan {
+    grid-column: span 2;
+}
+
+button {
+    grid-column: span 2;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Total Saldo */
+.total-saldo {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a73e8;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+thead th {
+    background: #ffffff;
+    color: #333;
+    font-weight: 700;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #f8fbff;
+}
+
+/* Badge Jenis */
+.pemasukan {
+    color: white;
+    background: #00bcd4;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.pengeluaran {
+    color: white;
+    background: #f44336;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Nominal */
+.nominal-masuk {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.nominal-keluar {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    #keterangan,
+    button {
+        grid-column: span 1;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
